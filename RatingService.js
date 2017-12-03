@@ -1,4 +1,4 @@
-var PROTO_PATH = __dirname + '/protos/ratingservice.proto';
+var PROTO_PATH = __dirname + '/protos/rating_service.proto';
 
 var grpc = require('grpc');
 var process = require('process');
@@ -6,6 +6,7 @@ var process = require('process');
 var ratingService = grpc.load(PROTO_PATH).ratingService.RatingService;
 
 function getRatingFactorByZip(call, callback) {
+    console.log(call.request.wurzel);
     callback(null, {ratingFactor: 2.05});
 }
 
