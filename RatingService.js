@@ -6,7 +6,7 @@ var process = require('process');
 var ratingService = grpc.load(PROTO_PATH).ratingService.RatingService;
 
 function getRatingFactorByZip(call, callback) {
-    console.log(call.request.wurzel);
+    console.log(call.request.zip);
     callback(null, {ratingFactor: 2.05});
 }
 
