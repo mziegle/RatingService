@@ -16,7 +16,5 @@ message RatingFactor {
 }
 
 message Request {
-    string wurzel = 1;
-    string brand = 2;
-    string model = 3;
+    string zip = 1;
 }
